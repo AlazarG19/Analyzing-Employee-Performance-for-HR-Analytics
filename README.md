@@ -1,24 +1,3 @@
----
-jupyter:
-  kernelspec:
-    display_name: Python 3 (ipykernel)
-    language: python
-    name: python3
-  language_info:
-    codemirror_mode:
-      name: ipython
-      version: 3
-    file_extension: .py
-    mimetype: text/x-python
-    name: python
-    nbconvert_exporter: python
-    pygments_lexer: ipython3
-    version: 3.10.6
-  nbformat: 4
-  nbformat_minor: 5
----
-
-::: {#3c8f7734 .cell .markdown}
 # Analyzing Employee Performance for HR Analytics Using Python and MySQL
 
 This project undertakes a thorough examination of real-world
@@ -30,9 +9,7 @@ In the face of escalating volume of data pertaining to employees and
 their contributions across diverse organization functions, there arises
 a critical imperative to leverage the combined power of Python and SQL
 for a meticulous exploration and analysis.
-:::
 
-::: {#99fc6e77 .cell .markdown}
 ## Objectives
 
 ### Data Retrieval
@@ -62,9 +39,7 @@ Importing data to sql inorder to make the analysis.
 Identifying and analysing trends in World Bank Loan Distribution over
 time and exploring patterins in loan allocation across different regions
 and sectors
-:::
 
-::: {#eee677a6 .cell .markdown}
 ## Dataset
 
 The dataset ,containing real-world data, provides a detailed overview of
@@ -145,9 +120,7 @@ any awards or recognition for exceptional performance.
 Represents the average score achieved by the employee in various
 training programs. It offers insights into the employee\'s aptitude for
 learning and skill development.
-:::
 
-::: {#43e5024c .cell .markdown}
 ## Tools
 
 We\'ll be using the the library pandas from the python function to
@@ -155,25 +128,19 @@ facilitate data manipulation and perform inital assessment of the
 dataset\'s strucutre. Once that is complete We\'ll be using mysql to
 formulate SQL queries to extract relevant information for trend
 analysis.
-:::
 
-::: {#39099403 .cell .markdown}
 ## Approach
 
 ### Data Import and Initial Exploration
 
 In data analysis, the initial step of importing a dataset and exploring
 its initial content is akin to opening a door to valuable insights.
-:::
 
-::: {#2abb148f .cell .markdown}
 ### Identifying Duplicate Data
 
 In this step, we aim to identify and quantify the presence of duplicate
 data within our dataset.
-:::
 
-::: {#afaae744 .cell .markdown}
 ### Removing Duplicate Data
 
 In this step, we are removing duplicate data from our dataset by
@@ -181,18 +148,14 @@ utilizing the drop_duplicates function with the inplace=True parameter.
 Duplicate data can introduce noise and inaccuracies into our analysis,
 and removing them ensures that we work with unique and non-repetitive
 records
-:::
 
-::: {#c682f05f .cell .markdown}
 ### Identifying Missing Data¶
 
 Here, we\'re examining our dataset for missing values, indicated by
 \'null\' values. The \'null_values\' variable holds the count of missing
 data points for each column. Identifying and quantifying missing data is
 crucial as it helps us understand the completeness of our dataset.
-:::
 
-::: {#c312c91a .cell .markdown}
 ### Handling Missing Data
 
 In this step, we\'re addressing missing data in specific columns, namely
@@ -202,9 +165,7 @@ columns, setting inplace=True. Handling missing data is crucial to
 maintain data integrity and accuracy in our analysis. By removing rows
 with missing values in these specific columns, we ensure that the
 dataset remains reliable and complete for our subsequent analysis.
-:::
 
-::: {#f3b21932 .cell .markdown}
 ### Data Preparation and Column Transformation
 
 In this step, we are preparing the dataset for analysis. We remove
@@ -214,16 +175,12 @@ data. We extract the numeric part of the string and convert the result
 to numeric values. This ensures that the dataset is optimized for our
 analysis, making it more concise and easier to work with in the next
 stages of our project.
-:::
 
-::: {#7a2003ea .cell .markdown}
 ### Data Conversion and Export {#data-conversion-and-export}
 
 We export the cleaned dataset to a CSV file for future use and verify
 the data types to ensure they are in the correct format.
-:::
 
-::: {#a6864f57 .cell .markdown}
 ## Trend Analysis {#trend-analysis}
 
 Once we\'ve prepared our data, we\'ll use sql to analyse any patterns
@@ -238,141 +195,107 @@ to load the data into the csv. During the import, MYSQL Workbench will
 prompt the data type of each dataset. During this process, select the
 appropriate data types such as datetime , double , string to the needed
 attributes.
-:::
 
-::: {#d21d1cbd .cell .markdown}
 ### Creating the Database Connection
 
 in the next step we create our database connection using the pymysql
 library
-:::
 
-::: {#5c7225af .cell .markdown}
 ### Asking questions to uncover patterns
 
 We start our analysis by asking questions relevant to the topic
 
-#### Q1 Find the average age of employees in each department and gender group. ( Round average age up to two decimal places if needed). {#q1-find-the-average-age-of-employees-in-each-department-and-gender-group--round-average-age-up-to-two-decimal-places-if-needed}
+#### Q1 Find the average age of employees in each department and gender group. ( Round average age up to two decimal places if needed). 
 
 This Questions Let\'s as have an insight in what the most typical age
 for each department and gender is
-:::
 
-::: {#9da59f07 .cell .markdown}
-#### Q2 List the top 3 departments with the highest average training scores. ( Round average scores up to two decimal places if needed) {#q2-list-the-top-3-departments-with-the-highest-average-training-scores--round-average-scores-up-to-two-decimal-places-if-needed}
-
+#### Q2 List the top 3 departments with the highest average training scores. ( Round average scores up to two decimal places if needed) 
 Finding the top 3 departments with the highest average training scores
 let\'s us know which departments have the best typical score
-:::
 
-::: {#7abc5446 .cell .markdown}
-#### Q3 Find the percentage of employees who have won awards in each region. (Round percentages up to two decimal places if needed) {#q3-find-the-percentage-of-employees-who-have-won-awards-in-each-region-round-percentages-up-to-two-decimal-places-if-needed}
+#### Q3 Find the percentage of employees who have won awards in each region. (Round percentages up to two decimal places if needed) 
 
 By answering this question, we can identify how much part of the
 employees are rewarded and which are not which let\'s us know which
 region has rewarded achievers
-:::
 
-::: {#00c4f061 .cell .markdown}
-#### Q4 Show the number of employees who have met more than 80% of KPIs for each recruitment channel and education level. {#q4-show-the-number-of-employees-who-have-met-more-than-80-of-kpis-for-each-recruitment-channel-and-education-level}
+#### Q4 Show the number of employees who have met more than 80% of KPIs for each recruitment channel and education level. 
 
 This leads us to the answer of how many employees have met their
 performance level based on what recruitment channel and education lever.
 This lets us know whether or not recruitment channel and education level
 have an impact on the productivity of employees
-:::
 
-::: {#28b9e413 .cell .markdown}
-#### Q5 Find the average length of service for employees in each department, considering only employees with previous year ratings greater than or equal to 4. ( Round average length up to two decimal places if needed) {#q5-find-the-average-length-of-service-for-employees-in-each-department-considering-only-employees-with-previous-year-ratings-greater-than-or-equal-to-4--round-average-length-up-to-two-decimal-places-if-needed}
+#### Q5 Find the average length of service for employees in each department, considering only employees with previous year ratings greater than or equal to 4. ( Round average length up to two decimal places if needed) 
 
 Answering this will let us know what is the typical amount of time an
 employee ,who has been rated as a great empoyee, has stayed in the
 company. This lets us know the retention in high performers, and let;s
 us know which individuals have made long-tem contributions to the
 organizaiton.
-:::
 
-::: {#5b2d683d .cell .markdown}
-#### Q6 List the top 5 regions with the highest average previous year ratings. ( Round average ratings up to two decimal places if needed) {#q6-list-the-top-5-regions-with-the-highest-average-previous-year-ratings--round-average-ratings-up-to-two-decimal-places-if-needed}
+#### Q6 List the top 5 regions with the highest average previous year ratings. ( Round average ratings up to two decimal places if needed) 
 
 This questions leads us to the answer of ,at average,what regions have
 employees with higher previous year ratings, leading us to compare
 performance between different regions, identify which regions contain
 high performing individuals
-:::
 
-::: {#f300020f .cell .markdown}
-#### Q7 List the departments with more than 100 employees having a length of service greater than 5 years. {#q7-list-the-departments-with-more-than-100-employees-having-a-length-of-service-greater-than-5-years}
+#### Q7 List the departments with more than 100 employees having a length of service greater than 5 years. 
 
 This lets us identify departments with long-term employees. Whether or
 not departmenets have stable work force with employees who have been
 with the organization fro an extended period. Identifying departments
 with a substantial number of long-serving employees can provide insights
 .
-:::
 
-::: {#61a1d710 .cell .markdown}
-#### Q8 Show the average length of service for employees who have attended more than 3 training, grouped by department and gender. ( Round average length up to two decimal places if needed) {#q8-show-the-average-length-of-service-for-employees-who-have-attended-more-than-3-training-grouped-by-department-and-gender--round-average-length-up-to-two-decimal-places-if-needed}
+#### Q8 Show the average length of service for employees who have attended more than 3 training, grouped by department and gender. ( Round average length up to two decimal places if needed) 
 
 Answerting this let\'s us know whether or not training has an impact on
 employee retention, since the result is grouped by department, identify
 whether or not department specific training has relationship with
 average length of service
-:::
 
-::: {#f1f2d344 .cell .markdown}
-#### Q9 Find the percentage of female employees who have won awards, per department. Also show the number of female employees who won awards and total female employees. ( Round percentage up to two decimal places if needed) {#q9-find-the-percentage-of-female-employees-who-have-won-awards-per-department-also-show-the-number-of-female-employees-who-won-awards-and-total-female-employees--round-percentage-up-to-two-decimal-places-if-needed}
+#### Q9 Find the percentage of female employees who have won awards, per department. Also show the number of female employees who won awards and total female employees. ( Round percentage up to two decimal places if needed) 
 
 This leads us to recognize and apply places where gender equality is
 needed and the effectiveness of awards programs.
-:::
 
-::: {#2d603750 .cell .markdown}
 #### Q10 Calculate the percentage of employees per department who have a length of service between 5 and 10 years. ( Round percentage up to two decimal places if needed) {#q10-calculate-the-percentage-of-employees-per-department-who-have-a-length-of-service-between-5-and-10-years--round-percentage-up-to-two-decimal-places-if-needed}
 
 This questions leads us to know whether a company is effectively
 retaining employees within the 5-10 years of service range.
-:::
 
-::: {#f9e2d181 .cell .markdown}
-#### Q11 Find the top 3 regions with the highest number of employees who have met more than 80% of their KPIs and received at least one award, grouped by department and region. {#q11-find-the-top-3-regions-with-the-highest-number-of-employees-who-have-met-more-than-80-of-their-kpis-and-received-at-least-one-award-grouped-by-department-and-region}
+#### Q11 Find the top 3 regions with the highest number of employees who have met more than 80% of their KPIs and received at least one award, grouped by department and region. 
 
 Answering this lets us know which department have the most productive
 employees who have been awarded
-:::
 
-::: {#0d9dd1a5 .cell .markdown}
-#### Q12 Calculate the average length of service for employees per education level and gender, considering only those employees who have completed more than 2 trainings and have an average training score greater than 75 ( Round average length up to two decimal places if needed) {#q12-calculate-the-average-length-of-service-for-employees-per-education-level-and-gender-considering-only-those-employees-who-have-completed-more-than-2-trainings-and-have-an-average-training-score-greater-than-75--round-average-length-up-to-two-decimal-places-if-needed}
+#### Q12 Calculate the average length of service for employees per education level and gender, considering only those employees who have completed more than 2 trainings and have an average training score greater than 75 ( Round average length up to two decimal places if needed) 
 
 this lets us discover whether or not education level and gender have any
 effect on the length of service. In addition we want to know whether or
 not people who have been well trained are staying within the company or
 not.
-:::
 
-::: {#ef91857c .cell .markdown}
-#### Q13 For each department and recruitment channel, find the total number of employees who have met more than 80% of their KPIs, have a previous_year_rating of 5, and have a length of service greater than 10 years. {#q13-for-each-department-and-recruitment-channel-find-the-total-number-of-employees-who-have-met-more-than-80-of-their-kpis-have-a-previous_year_rating-of-5-and-have-a-length-of-service-greater-than-10-years}
+#### Q13 For each department and recruitment channel, find the total number of employees who have met more than 80% of their KPIs, have a previous_year_rating of 5, and have a length of service greater than 10 years. 
 
 This questions lets us know from which department and recruitment
 channel does the most effective employee that has stayed the longest in
 the industry resides
-:::
 
-::: {#ee6042fe .cell .markdown}
-#### Q14 Calculate the percentage of employees in each department who have received awards, have a previous_year_rating of 4 or 5, and an average training score above 70, grouped by department and gender ( Round percentage up to two decimal places if needed). {#q14-calculate-the-percentage-of-employees-in-each-department-who-have-received-awards-have-a-previous_year_rating-of-4-or-5-and-an-average-training-score-above-70-grouped-by-department-and-gender--round-percentage-up-to-two-decimal-places-if-needed}
+#### Q14 Calculate the percentage of employees in each department who have received awards, have a previous_year_rating of 4 or 5, and an average training score above 70, grouped by department and gender ( Round percentage up to two decimal places if needed). 
 
 this question helps us discover the relation ship between hig
 performance and average training score in addition to know the
 distribution of awards by gender within each department
-:::
 
-::: {#ec8c6034 .cell .markdown}
-#### Q15 List the top 5 recruitment channels with the highest average length of service for employees who have met more than 80% of their KPIs, have a previous_year_rating of 5, and an age between 25 and 45 years, grouped by department and recruitment channel. ( Round average length up to two decimal places if needed {#q15-list-the-top-5-recruitment-channels-with-the-highest-average-length-of-service-for-employees-who-have-met-more-than-80-of-their-kpis-have-a-previous_year_rating-of-5-and-an-age-between-25-and-45-years-grouped-by-department-and-recruitment-channel--round-average-length-up-to-two-decimal-places-if-needed}
+#### Q15 List the top 5 recruitment channels with the highest average length of service for employees who have met more than 80% of their KPIs, have a previous_year_rating of 5, and an age between 25 and 45 years, grouped by department and recruitment channel.
 
 Using this question, we can identify the most effective recruitment
 channels to get well performing employees who are middle aged and
 typicall stay very long within the company
-:::
 
 ## Visualizing the data
 Visualizing this data is crucial for several reasons:
