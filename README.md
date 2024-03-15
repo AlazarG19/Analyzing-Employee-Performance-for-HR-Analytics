@@ -388,3 +388,8 @@ Power BI provides a wide range of visualization options, including charts, graph
 __Storytelling__
 
 Power BI enables users to create compelling data stories by combining visualizations, text, and images into interactive presentations. This storytelling approach helps convey key insights and recommendations to stakeholders in a clear and engaging manner.
+
+![Overall Page](/Visual1.PNG)
+![Performance: KPI](/Visual2.PNG)
+![Performance: Training Score](/Visual3.PNG)
+![Employee Retention](/Visual4.PNG)
